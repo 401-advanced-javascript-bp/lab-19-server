@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "dependencies": {
-    "jest": "^24.8.0"
+    "@nmq/q": "^1.0.3",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
   },
   "devDependencies": {},
   "scripts": {

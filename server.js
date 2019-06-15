@@ -1,5 +1,7 @@
 'use strict';
 
+require('dotenv');
+
 const QServer = require ('@nmq/q/server');
 
 QServer.start();
@@ -11,6 +13,7 @@ filesQueue.monitorEvent('error'); //rooms
 
 const databaseQueue = new QServer('databaseQueue'); //namespace
 
+databaseQueue.monitorEvent('alive');
 databaseQueue.monitorEvent('create');
 databaseQueue.monitorEvent('read');
 databaseQueue.monitorEvent('update');

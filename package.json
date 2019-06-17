@@ -2,7 +2,7 @@
   "name": "node-apps",
   "version": "1.0.0",
   "description": "",
-  "main": "promises.test.js",
+  "main": "server.js",
   "directories": {
     "doc": "docs"
   },
